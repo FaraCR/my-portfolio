@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
+
+.skills h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.skill-box {
+    background: #111112;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 0px;
+    margin: -300px 200px 0 200px;
+    z-index: 100;
+  }
+
+.text-shpere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagcloud {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.tagcloud--item {
+    color: #f6f6f6;
+    text-transform: uppercase;
+}
+
+.tagcloud--item:hover {
+    color: #ffcb74;
+}
+
+@media screen and (max-width: 950px) {
+    .skill-box {
+        margin: -250px 100px 0 100px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .skill-box {
+        margin: -250px 50px 0 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .skill-box {
+        margin: -200px 0 0 0;
+    }
+}

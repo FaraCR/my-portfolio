@@ -10,6 +10,7 @@ import '../css/Navbar.css';
 function NavBar() {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     useEffect(() => {
       const onScroll = () => {
@@ -33,13 +34,17 @@ function NavBar() {
         setActiveLink(value);
     }
 
+    const handleMobileMenuToggle = () => {
+      setMobileMenuOpen(!mobileMenuOpen);
+    };
+
 
   return (
 
-    <Navbar expand="md" className={ scrolled ? 'scrolled' : ''}>
+    <Navbar expand="md" className={`nav.navbar ${scrolled ? 'scrolled' : ''} ${mobileMenuOpen ? 'mobile-menu-open' : ''}`}>
       <Container>
         <Navbar.Brand href="#home">MyLittle<span>Website</span></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
+        <Navbar.Toggle onClick={handleMobileMenuToggle} aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">

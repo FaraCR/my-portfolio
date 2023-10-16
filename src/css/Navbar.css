@@ -159,6 +159,10 @@ nav.navbar {
   nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
       border-color: transparent;
   }
+
+  .navbar.mobile-menu-open {
+    background-color: #000; /* Change this to your desired background color */
+  }
   
   @media screen and (max-width: 991px) {
 

@@ -12,7 +12,7 @@ const SkillsShpere = () => {
     if (screenWidth < 576) {
       return 150; // Set a smaller radius for screens less than 576px wide
     } else if (screenWidth < 992) {
-      return 200; // Set a medium radius for screens between 576px and 991px wide
+      return 220; // Set a medium radius for screens between 576px and 991px wide
     } else {
       return 250; // Default radius for larger screens
     }
@@ -41,7 +41,7 @@ const SkillsShpere = () => {
         "GITHUB",
         "UI/UX Design",
         "web development",
-        "Bootstrap",
+        
       ];
 
       const options = {

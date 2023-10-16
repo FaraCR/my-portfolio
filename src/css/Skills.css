@@ -36,20 +36,28 @@
     color: #ffcb74;
 }
 
-@media screen and (max-width: 950px) {
-    .skill-box {
-        margin: -250px 100px 0 100px;
-    }
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 992px) {
     .skill-box {
         margin: -250px 50px 0 50px;
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
+    .skill-box {
+        margin: -250px 10px 0 10px;
+    }
+
+    .tagcloud {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
     .skill-box {
         margin: -200px 0 0 0;
+    }
+
+    .tagcloud {
+        font-size: 0.6rem;
     }
 }

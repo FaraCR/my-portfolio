@@ -41,7 +41,6 @@ const SkillsShpere = () => {
         "GITHUB",
         "UI/UX Design",
         "web development",
-        
       ];
 
       const options = {

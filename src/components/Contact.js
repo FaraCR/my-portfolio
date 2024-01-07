@@ -26,15 +26,15 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:8000/contact", {
+    let response = await fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
       },
       body: JSON.stringify(formDetails),
     });
-    setButtonText("Send");
     let result = await response.json();
+    setButtonText("Send");
     setFormDetails(formInitial);
     if (result.code === 200) {
       setStatus({ success: true, message: "Message sent successfully" });

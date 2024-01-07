@@ -22,16 +22,17 @@ const contactEmail = nodemailer.createTransport({
     auth: {
         user: process.env.EMAIL_ADDRESS,
         pass: process.env.EMAIL_PASS
-    }
-})
+    },
+    authMethod: 'login' // Add this line
+});
 
 contactEmail.verify((error) => {
     if (error) {
-        console.log("Error with email verification")
+        console.error("Error with email verification:", error);
     } else {
-        console.log("Server is ready to send emails!")
+        console.log("Server is ready to send emails!");
     }
-})
+});
 
 app.listen( PORT , () => {
     console.log(`Server is running on port ${PORT}`); 

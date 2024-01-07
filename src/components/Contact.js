@@ -26,7 +26,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch("http://localhost:8000/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -34,7 +34,7 @@ function Contact() {
       body: JSON.stringify(formDetails),
     });
     setButtonText("Send");
-    let result = response.json();
+    let result = await response.json();
     setFormDetails(formInitial);
     if (result.code === 200) {
       setStatus({ success: true, message: "Message sent successfully" });
@@ -88,7 +88,7 @@ function Contact() {
                 </Col>
                 <Col>
                   <textarea
-                    row="6"
+                    rows="6"
                     value={formDetails.message}
                     placeholder="Message"
                     onChange={(e) => onFormUpdate("message", e.target.value)}

@@ -1,4 +1,4 @@
-const express = require("express");
+/* const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
@@ -72,3 +72,4 @@ router.post("/contact", (req, res) => {
     }
   });
 });
+*/

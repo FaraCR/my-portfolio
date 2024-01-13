@@ -97,19 +97,21 @@ function Contact() {
                     <span>{buttonText}</span>
                   </button>
                 </Col>
-                {status.message && (
-                  <Col>
-                    <p
-                      className={
-                        status.success === false ? "danger" : "success"
-                      }
-                    >
-                      {status.message}
-                    </p>
-                  </Col>
-                )}
               </Row>
             </form>
+            {status.message && (
+              <Row>
+                <Col>
+                  <p
+                    className={
+                      status.success === false ? "danger" : "success"
+                    }
+                  >
+                    {status.message}
+                  </p>
+                </Col>
+              </Row>
+            )}
           </Col>
         </Row>
       </Container>
@@ -118,3 +120,5 @@ function Contact() {
 }
 
 export default Contact;
+
+

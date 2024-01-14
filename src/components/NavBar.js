@@ -87,13 +87,13 @@ function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://cz.linkedin.com/in/farrukh-mirjalilov-1a6a51152">
+              <a href="https://cz.linkedin.com/in/farrukh-mirjalilov-1a6a51152" target="_blank" rel="noopener noreferrer">
                 <img src={LinkedInLogo} alt="LinkedIn logo" />
               </a>
-              <a href="https://www.instagram.com/fara_svn/">
+              <a href="https://www.instagram.com/fara_svn/" target="_blank" rel="noopener noreferrer">
                 <img src={InstaLogo} alt="Instagram Logo" />
               </a>
-              <a href="https://github.com/FaraCR">
+              <a href="https://github.com/FaraCR" target="_blank" rel="noopener noreferrer">
                 <img src={GitHubLogo} alt="GitHub logo" />
               </a>
             </div>

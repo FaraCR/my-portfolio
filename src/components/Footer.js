@@ -14,13 +14,13 @@ function Footer() {
           </Col>
           <Col sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="https://cz.linkedin.com/in/farrukh-mirjalilov-1a6a51152">
+              <a href="https://cz.linkedin.com/in/farrukh-mirjalilov-1a6a51152" target="_blank" rel="noopener noreferrer">
                 <img src={Linkd} alt="logo" />
               </a>
-              <a href="https://www.instagram.com/fara_svn/">
+              <a href="https://www.instagram.com/fara_svn/" target="_blank" rel="noopener noreferrer">
                 <img src={Inst} alt="logo" />
               </a>
-              <a href="https://github.com/FaraCR">
+              <a href="https://github.com/FaraCR" target="_blank" rel="noopener noreferrer">
                 <img src={Github} alt="logo" />
               </a>
             </div>

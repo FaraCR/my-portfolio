@@ -1,6 +1,6 @@
 .banner {
   margin-top: 0;
-  padding: 250px 0 400px 0;
+  padding: 250px 0 150px 0;
   background-image: url("../logos/6195005.jpg");
   background-position: top center;
   background-size: cover;
@@ -47,11 +47,17 @@
   background-color: transparent;
   border: 1px solid #f6f6f6;
   padding: 10px;
+  text-decoration: none;
 }
 
 .banner button:hover {
   background-color: #4c92a2;
   transition: 0.5s ease-out;
+  text-decoration: none !important;
+}
+
+.button-hover {
+  text-decoration: none !important;
 }
 
 

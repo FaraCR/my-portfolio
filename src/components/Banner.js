@@ -14,11 +14,9 @@ function Banner() {
             <h1>Hi, I am Fara</h1>
             <p>
               {" "}
-              Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah
-              blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah
-              blah Blah blah blah Blah blah blah{" "}
+              I am a junior front-end developer based in Prague, Czech Republic. Eager to learn new things and find a new team for future projects. If you have any questions, feel free to contact me on LinkedIn or using the contact form below. Cheers!{" "}
             </p>
-            <HashLink to="#connect">
+            <HashLink to="#connect" className="button-hover">
               <button>Lets Connect</button>
             </HashLink>
           </Col>

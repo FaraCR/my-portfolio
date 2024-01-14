@@ -11,6 +11,7 @@ function Project() {
       title: "Jammming",
       description: "My first Portfolio project from Codeacademy. Using Spotify API it allows the user to search for songs, create custom playlists and save them in the user's Spotify account",
       imgUrl: Jammming,
+      projectLink:"https://jammmingbyfara.netlify.app"
     },
     {
       title: "Project",
@@ -32,9 +33,7 @@ function Project() {
             <h2>My Projects</h2>
             <p>
               {" "}
-              Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah
-              blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah
-              blah Blah blah blah Blah blah blah{" "}
+              Here are some projects i have made so far. Feel free to test them out.{" "}
             </p>
           </Col>
         </Row>

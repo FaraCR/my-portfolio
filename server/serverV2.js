@@ -23,7 +23,7 @@ const contactEmail = nodemailer.createTransport({
     user: process.env.EMAIL_ADDRESS,
     pass: process.env.EMAIL_PASS,
   },
-  authMethod: "login", // Add this line
+  authMethod: "login", 
 });
 
 contactEmail.verify((error) => {

@@ -15,36 +15,33 @@ exports.handler = async (event, context) => {
   try {
     await contactEmail.verify();
     console.log("Server is ready to send emails!");
-  } catch (error) {
-    console.error("Error with email verification:", error);
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: "Error with email verification" }),
+
+    const mail = {
+      from: `${firstName} ${lastName}`,
+      to: process.env.EMAIL_ADDRESS,
+      subject: "Interview",
+      html: `<p>Name: ${firstName} ${lastName}</p>
+        <p>Email: ${email}</p>
+        <p>Phone: ${phone}</p>
+        <p>Message: ${message}</p>`,
     };
-  }
 
-  const mail = {
-    from: `${firstName} ${lastName}`,
-    to: process.env.EMAIL_ADDRESS,
-    subject: "Interview",
-    html: `<p>Name: ${firstName} ${lastName}</p>
-      <p>Email: ${email}</p>
-      <p>Phone: ${phone}</p>
-      <p>Message: ${message}</p>`,
-  };
-
-  try {
     await contactEmail.sendMail(mail);
+
+    // Return a successful response with status code 200
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: "Message sent" }),
+      body: JSON.stringify({ message: "Message sent successfully" }),
     };
   } catch (error) {
     console.error("Error sending email:", error);
+
+    // Return an error response with status code 500
     return {
       statusCode: 500,
       body: JSON.stringify({ error: "Error sending email" }),
     };
   }
 };
+
 

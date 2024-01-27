@@ -38,7 +38,7 @@ function Contact() {
     setFormDetails(formInitial);
     if (result.code === 200) {
       setStatus({ success: true, message: "Message sent successfully" });
-    } else {
+    } else if(result.code === 500) {
       setStatus({ success: false, message: "Something went wrong..." });
     }
   };

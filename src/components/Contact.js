@@ -36,10 +36,10 @@ function Contact() {
     let result = await response.json();
     setButtonText("Send");
     setFormDetails(formInitial);
-    if (result.code === 200) {
-      setStatus({ success: true, message: "Message sent successfully" });
-    } else if(result.code === 500) {
+    if (result.code === 500) {
       setStatus({ success: false, message: "Something went wrong..." });
+    } else {
+      setStatus({ success: true, message: "Message sent successfully" });
     }
   };
 

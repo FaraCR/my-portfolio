@@ -4,5 +4,6 @@
 
 [[headers]]
   for = "/*"
-  [headers.values]
-  Content-Security-Policy = "script-src 'self' https://cdn.jsdelivr.net/npm/tagcloud@2.4.0"
+    [headers.values]
+      Content-Security-Policy = "script-src 'self' https://raw.githubusercontent.com/cong-min/TagCloud/master/dist/TagCloud.js;"
+

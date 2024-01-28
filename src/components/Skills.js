@@ -19,38 +19,42 @@ const SkillsShpere = () => {
   };
 
   useEffect(() => {
+    console.log('SkillsShpere component mounted.');
+
+    const container = ".tagcloud";
+    const texts = [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "ES6",
+      "GIT",
+      "UI/UX Design",
+      "Bootstrap",
+      "web development",
+      "GITHUB",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "ES6",
+      "GIT",
+      "GITHUB",
+      "UI/UX Design",
+      "web development",
+    ];
+
+    const options = {
+      radius: getRadius(),
+      maxSpeed: "slow",
+      initSpeed: "slow",
+      keep: true,
+    };
+
+    TagCloud(container, texts, options);
+
     return () => {
-      const container = ".tagcloud";
-      const texts = [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "ES6",
-        "GIT",
-        "UI/UX Design",
-        "Bootstrap",
-        "web development",
-        "GITHUB",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "ES6",
-        "GIT",
-        "GITHUB",
-        "UI/UX Design",
-        "web development",
-      ];
-
-      const options = {
-        radius: getRadius(),
-        maxSpeed: "slow",
-        initSpeed: "slow",
-        keep: true,
-      };
-
-      TagCloud(container, texts, options);
+      // Cleanup function
     };
   }, []);
 
@@ -73,3 +77,4 @@ const SkillsShpere = () => {
 };
 
 export default SkillsShpere;
+

@@ -2,4 +2,7 @@
   publish = "build"
   functions = "functions"
 
-
+[[headers]]
+  for = "/*"
+  [headers.values]
+  Content-Security-Policy = "script-src 'self' https://cdn.jsdelivr.net/npm/tagcloud@2.4.0"

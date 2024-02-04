@@ -75,20 +75,18 @@
 @media screen and (max-width: 1200px) {
   .banner {
     padding-top: 150px;
-    padding-bottom: 430px;
+    padding-bottom: 150px;
   }
 }
 
 @media screen and (max-width: 992px) {
   .banner {
     padding-top: 150px;
-    padding-bottom: 350px;
   }
 }
 
 @media screen and (max-width: 581px) {
   .banner {
     padding-top: 150px;
-    padding-bottom: 300px;
   }
 }

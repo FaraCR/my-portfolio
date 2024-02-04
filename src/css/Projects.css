@@ -22,7 +22,6 @@
   overflow: hidden;
   margin-bottom: 24px;
   object-fit: cover;
-  width: 90%;
 }
 .proj-imgbx::before {
   content: "";
@@ -68,4 +67,16 @@
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+}
+
+@media screen and (max-width: 992px) {
+  .proj-imgbx {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 581px) {
+  .proj-imgbx {
+    width: 80%;
+  }
 }

@@ -77,7 +77,7 @@
 @media screen and (max-width: 992px) {
   .proj-imgbx {
     width: 90%;
-    margin: 0 auto;
+    margin: 15px auto;
   }
 }
 

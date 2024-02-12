@@ -2,7 +2,7 @@ import React from "react";
 import "../css/Projects.css";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCards from "./ProjectCards";
-import CardImg from "../logos/greyImg.png";
+//import CardImg from "../logos/greyImg.png";
 import Jammming from "../logos/jamming.png";
 import WeatherIcon from '../logos/weather.png';
 

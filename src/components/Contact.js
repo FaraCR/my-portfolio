@@ -86,7 +86,7 @@ function Contact() {
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
                 </Col>
-                <Col>
+                <Col xs={12}>
                   <textarea
                     rows="6"
                     value={formDetails.message}
@@ -103,9 +103,7 @@ function Contact() {
               <Row>
                 <Col>
                   <p
-                    className={
-                      status.success === false ? "danger" : "success"
-                    }
+                    className={status.success === false ? "danger" : "success"}
                   >
                     {status.message}
                   </p>
@@ -120,6 +118,3 @@ function Contact() {
 }
 
 export default Contact;
-
-
-
